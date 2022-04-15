@@ -1,0 +1,61 @@
+% quiz.sty
+% Basic quiz style sheet
+%
+% Author: Sarah Wesolowski 
+% Email: scwesolowski@salisbury.edu
+% Date: Jul-31-2018 
+% Last modified: Apr-13-2022
+%
+
+
+% packages
+\RequirePackage{amsmath}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\RequirePackage{amsthm}
+\RequirePackage{amsfonts}
+\RequirePackage{bm}
+\RequirePackage{enumitem}
+
+% --- Set up custom theorem environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+% --- Set up page size, headers, and footers
+% ---
+% \RequirePackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+
+% --- create custom commands
+% ---
+\newcommand{\xbar}{\bar{x}}
+\newcommand{\muominmut}{\mu_1 - \mu_2}
+\newcommand{\smallspace}{\\[0.1in]}
+\newcommand{\mediumspace}{\\[0.3in]}
+\newcommand{\largespace}{\\[0.5in]}
+\newcommand{\pval}{\ensuremath{p\text{-value}}}
+\newcommand{\dispfrac}[2]{\displaystyle\frac{#1}{#2}}
+\newcommand{\displim}[1]{\displaystyle\lim_{#1}}
+\newcommand{\BigBlue}[1]{{\Large \color{blue} #1}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+%\newcommand{\be}{\begin{enumerate}}
+%\newcommand{\ee}{\end{enumerate}}
+\newcommand{\I}{\item}
+\newcommand{\spaceOut}{\vspace*{0.3in}}
+\newcommand{\textFig}[2]{\begin{figure}[h!]%
+						\centering
+						\includegraphics[width=#1\textwidth]{#2}
+					  \end{figure}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\logit}[1]{\mathrm{logit}\left[{#1}\right]}
+
+% Custom commands for Herman Lab projects
+\newcommand{\betavec}{\ensuremath{\boldsymbol{\beta}}}
+\newcommand{\Xvec}{\ensuremath{\mathbf{X}}}
+
+% set paragraphs to not indent at all
+\setlength{\parindent}{0in}
