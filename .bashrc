@@ -21,9 +21,11 @@ else
   echo "Downloading git prompt file from github"
   curl -o ~/.git-prompt.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
   source ~/.git-prompt.bash
-  echo "Setting up the prompt variable"
-  PS1='[\u@\h \W$(__git_ps1 " {%s}")]\$ '
 fi
+
+source ~/.git-prompt.bash
+echo "Setting up the prompt variable"
+PS1='[\u: \W$(__git_ps1 " {%s}")]\$ '
 
 # Please shut up about the z shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
