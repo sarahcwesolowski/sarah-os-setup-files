@@ -2,6 +2,8 @@
 alias ll="ls -la"
 alias la="ls -a"
 alias atom="open -a Atom.app"
+alias mount-pmacs="sshfs scwesolo@scisub7.pmacs.upenn.edu:/project/ehr_feat ~/PMACS_remote/ehr_feat -o defer_permissions,volname=ehr_feat,IdentityFile=~/.ssh/id_rsa && sshfs scwesolo@scisub7.pmacs.upenn.edu:/home/scwesolo ~/PMACS_remote/scwesolo -o defer_permissions,volname=scwesolo,IdentityFile=~/.ssh/id_rsa"
+alias unmount-pmacs="diskutil umount force ~/PMACS_remote/ehr_feat/ && diskutil umount force ~/PMACS_remote/scwesolo/"
 
 # git completion
 if [ -f ~/.git-completion.bash ]; then
